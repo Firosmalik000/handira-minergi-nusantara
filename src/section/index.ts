@@ -1,0 +1,9 @@
+export { default as About } from './About';
+export { default as Contact } from './Contact';
+export { default as Hero } from './Hero';
+export { default as Mision } from './Mision';
+export { default as Vision } from './Vision';
+export { default as CoreCompetencies } from './CoreCompetencies';
+export { default as OngoingProject } from './OngoingProject';
+export { default as Structures } from './Structures';
+export { default as Excellence } from './Excellence';
