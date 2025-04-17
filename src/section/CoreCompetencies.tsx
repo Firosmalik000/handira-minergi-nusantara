@@ -71,18 +71,19 @@ const CoreCompetencies = () => {
         <p className="text-lg max-w-4xl mx-auto text-gray-300">{data.intro}</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12">
+      {/* Competencies Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-12">
         {data.competencies.map((item, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: index * 0.2, duration: 0.6 }}
-            className="bg-white bg-opacity-5 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:scale-105 transition-all"
+            className="bg-white bg-opacity-10 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:scale-105 hover:shadow-xl transition-all"
           >
-            <div className="flex justify-center">{item.icon}</div>
-            <h3 className="text-xl font-semibold mt-4 mb-2 text-orange-300 font-playfair text-center">{item.title}</h3>
+            <div className="flex justify-center mb-6">{item.icon}</div>
+            <h3 className="text-xl font-semibold text-orange-300 font-playfair text-center mb-2">{item.title}</h3>
             <p className="text-gray-300 text-center">{item.description}</p>
           </motion.div>
         ))}

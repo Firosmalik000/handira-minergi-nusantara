@@ -1,48 +1,43 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import HeroImage from '../img/slide1satu.jpeg';
-import HeroImage2 from '../img/slide2.jpg';
-import HeroImage3 from '../img/slide3.jpg';
-import HeroImage4 from '../img/slide4.jpg';
-import HeroImage5 from '../img/slide5.jpg';
-import HeroImage6 from '../img/Kargo2.jpg';
-import HeroImage7 from '../img/Kunjungan.jpg';
-
-import { GrFormNext, GrFormPrevious } from 'react-icons/gr';
+import { useLanguage } from '@/hooks/UseLanguage';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
-  const images = [HeroImage, HeroImage2, HeroImage3, HeroImage4, HeroImage5, HeroImage6, HeroImage7];
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  const { language } = useLanguage();
+  const content = {
+    en: {
+      title: 'Welcome To',
+      description: `PT. HADIRA MINERGI NUSANTARA`,
+      tag: `Your trusted partner in energy solutions.`,
+    },
+    id: {
+      title: 'Selamat Datang',
+      description: `PT. HADIRA MINERGI NUSANTARA`,
+      tag: `Mitra tepercaya Anda dalam solusi energi.`,
+    },
   };
 
-  const prevImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
-
-  useEffect(() => {
-    const intervalId = setInterval(nextImage, 5000);
-    return () => clearInterval(intervalId);
-  }, []);
   return (
-    <section
-      id="hero"
-      className="relative w-full min-h-screen bg-cover bg-center transition-all duration-500"
-      style={{
-        backgroundImage: `url(${images[currentIndex]})`,
-        backgroundSize: 'cover',
-      }}
-    >
-      {' '}
-      <button className="absolute left-5 top-1/2 transform -translate-y-1/2 px-4 py-4 bg-black bg-opacity-50 text-white rounded-full shadow-lg hover:bg-gray-600 transition duration-200 z-20" onClick={prevImage}>
-        <GrFormPrevious />
-      </button>
-      <button className="absolute right-5 top-1/2 transform -translate-y-1/2 px-4 py-4 bg-black bg-opacity-50 text-white rounded-full shadow-lg hover:bg-gray-600 transition duration-200 z-20" onClick={nextImage}>
-        <GrFormNext />
-      </button>
+    <section id="hero" className="relative w-full min-h-screen bg-center bg-cover" style={{ backgroundImage: `url(/heri.jpeg)` }}>
+      {/* Dark gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80 z-10" />
+
+      {/* Centered content */}
+      <div className="absolute inset-0 flex items-center justify-center z-20 px-4">
+        <div className="text-center text-white max-w-3xl">
+          <motion.h2 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} transition={{ duration: 0.8 }} className="text-4xl md:text-6xl font-bold font-playfair mb-4 leading-tight drop-shadow-lg">
+            {content[language].title}
+          </motion.h2>
+          <motion.h1 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} transition={{ duration: 0.8 }} className="text-4xl md:text-6xl font-bold font-playfair mb-4 leading-tight drop-shadow-lg">
+            {content[language].description}
+          </motion.h1>
+
+          <motion.p whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 20 }} transition={{ duration: 0.9, delay: 0.3 }} className="text-lg md:text-xl text-gray-200 drop-shadow">
+            {content[language].tag}
+          </motion.p>
+        </div>
+      </div>
     </section>
   );
 };

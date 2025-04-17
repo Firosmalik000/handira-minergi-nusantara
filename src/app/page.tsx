@@ -1,8 +1,9 @@
-import { About, CoreCompetencies, Excellence, Mision, OngoingProject, Structures, Vision } from '@/section';
+import { About, CoreCompetencies, Excellence, Hero, Mision, OngoingProject, Structures, Vision } from '@/section';
 
 const Home = () => {
   return (
     <div>
+      <Hero />
       <About />
       <OngoingProject />
       <CoreCompetencies />
