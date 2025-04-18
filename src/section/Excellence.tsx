@@ -57,10 +57,20 @@ const Excellence = () => {
   const content = excellenceContent[language];
 
   return (
-    <section id="excellence" className="w-full py-20 px-6 md:px-24 bg-gradient-to-br from-orange-50 to-white">
+    <section id="excellence" className="w-full py-20 px-6 md:px-24 bg-orange-400 ">
       <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-800 font-playfair mb-4">{content.title}</h2>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">{content.subtitle}</p>
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          className="text-4xl md:text-5xl font-bold text-white font-playfair mb-4"
+        >
+          {content.title}
+        </motion.h2>
+        <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ delay: 0.5, duration: 0.6 }} className="text-lg text-white max-w-3xl mx-auto">
+          {content.subtitle}
+        </motion.p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-16">
@@ -80,7 +90,7 @@ const Excellence = () => {
         ))}
       </div>
 
-      <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6 }} className="text-center text-lg text-gray-700 max-w-4xl mx-auto">
+      <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6 }} className="text-center text-lg text-white max-w-4xl mx-auto">
         {content.mission}
       </motion.p>
     </section>

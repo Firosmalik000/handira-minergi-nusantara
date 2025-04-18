@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useLanguage } from '../hooks/UseLanguage';
-import ClientImage from '../img/client.jpg';
+// import ClientImage from '../img/client.jpg';
 import { motion } from 'framer-motion';
 
 const Mision = () => {
@@ -36,7 +36,7 @@ const Mision = () => {
   return (
     <section id="mision" className="w-full bg-gray-100 py-16 px-4 md:px-24">
       <div className="flex flex-col items-center">
-        <Image src={ClientImage} alt="Client" className="w-full max-h-[650px] object-cover rounded-2xl shadow-xl mb-10" />
+        <Image src={'/hand.jpg'} width={1200} height={800} alt="Client" className="w-full max-h-[650px] object-cover rounded-2xl shadow-xl mb-10" />
 
         <h1 className="text-3xl md:text-4xl font-bold font-playfair text-gray-800 text-center mb-12">{content[language].title}</h1>
 

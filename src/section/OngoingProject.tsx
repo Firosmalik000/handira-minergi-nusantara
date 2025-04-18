@@ -69,12 +69,20 @@ const OngoingProject = () => {
   const data = projectDetails[language];
 
   return (
-    <section className="w-full py-20 px-6 md:px-24 bg-gradient-to-b from-[#0F172A] to-[#1E293B] text-white" id="ongoing-project">
+    <section className="w-full py-20 px-6 md:px-24 bg-[#467cfa]  text-white" id="project">
       <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold font-playfair mb-6">{data.title}</h2>
-        <p className="text-xl max-w-3xl mx-auto text-gray-300">{data.projectName}</p>
-        <p className="text-lg max-w-4xl mx-auto text-gray-300 mb-8">{data.partner}</p>
-        <p className="text-lg max-w-4xl mx-auto text-gray-300 mb-8">{data.intro}</p>
+        <motion.h2 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} className="text-4xl md:text-5xl font-bold font-playfair mb-6">
+          {data.title}
+        </motion.h2>
+        <motion.p initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} className="text-xl max-w-3xl mx-auto text-white">
+          {data.projectName}
+        </motion.p>
+        <motion.p initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} className="text-lg max-w-4xl mx-auto text-white mb-8">
+          {data.partner}
+        </motion.p>
+        <motion.p initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} className="text-lg max-w-4xl mx-auto text-white mb-8">
+          {data.intro}
+        </motion.p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12">
@@ -89,7 +97,7 @@ const OngoingProject = () => {
           >
             <div className="flex justify-center">{item.icon}</div>
             <h3 className="text-xl font-semibold mt-4 mb-2 text-orange-300 font-playfair text-center">{item.title}</h3>
-            <p className="text-gray-300 text-center">{item.description}</p>
+            <p className="text-gray-600 text-center">{item.description}</p>
           </motion.div>
         ))}
       </div>
