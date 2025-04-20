@@ -1,6 +1,5 @@
 'use client';
 import { useState, useEffect } from 'react';
-import LogoImage from '../img/logo.png';
 import { useLanguage } from '../hooks/UseLanguage';
 import { FaTimes } from 'react-icons/fa';
 import { IoMenuSharp } from 'react-icons/io5';
@@ -56,12 +55,12 @@ const Navbar = () => {
         <motion.div
           initial={{ y: -100 }}
           animate={{ y: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
-          className={`fixed top-0 z-50 w-[90%] backdrop-blur-md transition-all duration-500  mt-6 rounded-2xl
-        ${isScrolled ? 'bg-white/60 text-black shadow-md' : 'bg-black/30 text-white'}`}
+          className={`fixed top-0 z-50 w-[90%] transition-all duration-500  mt-6 rounded-2xl
+        ${isScrolled ? 'bg-white/60 text-black shadow-md backdrop-blur-md' : 'bg-transparent text-white'}`}
         >
-          <div className="container mx-auto flex items-center justify-between h-[90px] px-4 md:px-6 lg:px-8">
+          <div className="container mx-auto flex items-center justify-between h-[60px] md:h-[70px] px-4 md:px-6 lg:px-8">
             <div className="flex items-center gap-2">
-              <Image src={LogoImage} className="w-28 md:w-28" alt="Logo" />
+              <Image src="/logo.png" width={100} height={100} className="h-20  md:h-30 w-full" alt="Logo" />
               {/* <p className="text-xl md:text-3xl font-bold font-sans">PT. Handira Minergi Nusantara</p> */}
             </div>
 
