@@ -9,7 +9,7 @@ const CoreCompetencies = () => {
 
   const content = {
     en: {
-      title: 'Core Competencies',
+      title: 'CORE COMPETENCIES',
       intro: 'Our seasoned leadership and expert team form the backbone of our operational excellence. These core strengths drive precision, innovation, and superior results in energy development and extraction.',
       competencies: [
         {
@@ -35,7 +35,7 @@ const CoreCompetencies = () => {
       ],
     },
     id: {
-      title: 'Kompetensi Inti',
+      title: 'KOMPETENSI INTI',
       intro: 'Kepemimpinan berpengalaman dan tim ahli menjadi fondasi dari keunggulan operasional kami. Kekuatan inti ini mendorong presisi, inovasi, dan hasil terbaik dalam pengembangan serta eksplorasi energi.',
       competencies: [
         {
@@ -66,11 +66,11 @@ const CoreCompetencies = () => {
 
   return (
     <section id="competencies" className="w-full py-20 px-6 md:px-24 bg-gradient-to-b from-[#0F172A] to-[#1E293B] text-white">
-      <div className="text-center mb-16">
-        <motion.h2 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} className="text-4xl md:text-5xl font-bold font-playfair mb-6">
+      <div className="text-center mb-10">
+        <motion.h2 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} className="text-4xl font-bold font-playfair mb-6">
           {data.title}
         </motion.h2>
-        <motion.p initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} className="text-lg max-w-4xl mx-auto text-gray-300">
+        <motion.p initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} className="text-base md:text-lg max-w-2xl mx-auto text-gray-300">
           {data.intro}
         </motion.p>
       </div>
@@ -84,9 +84,9 @@ const CoreCompetencies = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: index * 0.2, duration: 0.6 }}
-            className="bg-white bg-opacity-10 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:scale-105 hover:shadow-xl transition-all"
+            className="bg-white bg-opacity-10 backdrop-blur-md px-2 py-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-xl transition-all"
           >
-            <div className="flex justify-center mb-6">{item.icon}</div>
+            <div className="flex justify-center ">{item.icon}</div>
             <h3 className="text-xl font-semibold text-orange-500 font-playfair text-center mb-2">{item.title}</h3>
             <p className="text-gray-600 text-center">{item.description}</p>
           </motion.div>
