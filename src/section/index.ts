@@ -7,3 +7,4 @@ export { default as CoreCompetencies } from './CoreCompetencies';
 export { default as OngoingProject } from './OngoingProject';
 export { default as Structures } from './Structures';
 export { default as Excellence } from './Excellence';
+export { default as Company } from './Company';

@@ -1,5 +1,4 @@
-import { About, CoreCompetencies, Excellence, Hero, Mision, OngoingProject, Structures, Vision } from '@/section';
-import Company from '@/section/Company';
+import { About, Company, CoreCompetencies, Excellence, Hero, Mision, OngoingProject, Structures, Vision } from '@/section';
 
 const Home = () => {
   return (
