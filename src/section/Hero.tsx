@@ -19,24 +19,43 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative w-full min-h-screen bg-center bg-cover" style={{ backgroundImage: `url(/heri.jpeg)` }}>
-      {/* Dark gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80 z-10" />
+    <section
+      id="hero"
+      className="relative w-full min-h-screen bg-center bg-cover flex items-center justify-center px-4 sm:px-8"
+      style={{ backgroundImage: `url(/heri.jpeg)` }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/20 z-10" />
 
-      {/* Centered content */}
-      <div className="absolute inset-0 flex items-center justify-center z-20 px-4">
-        <div className="text-center text-white max-w-3xl">
-          <motion.h2 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} transition={{ duration: 0.8 }} className="text-4xl md:text-6xl font-bold font-playfair mb-4 leading-tight drop-shadow-lg">
-            {content[language].title}
-          </motion.h2>
-          <motion.h1 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} transition={{ duration: 0.8 }} className="text-4xl md:text-6xl font-bold font-playfair mb-4 leading-tight drop-shadow-lg">
-            {content[language].description}
-          </motion.h1>
+      {/* Content */}
+      <div className="relative z-20 text-white text-center max-w-screen-xl w-full">
+        {/* Optional Subtitle */}
+        {/* <motion.h2
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -30 }}
+          transition={{ duration: 0.8 }}
+          className="text-2xl sm:text-4xl md:text-5xl font-bold font-playfair mb-2 drop-shadow-lg"
+        >
+          {content[language].title}
+        </motion.h2> */}
 
-          <motion.p whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 20 }} transition={{ duration: 0.9, delay: 0.3 }} className="text-lg md:text-xl text-gray-200 drop-shadow">
-            {content[language].tag}
-          </motion.p>
-        </div>
+        <motion.h1
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -30 }}
+          transition={{ duration: 0.8 }}
+          className="text-2xl sm:text-4xl md:text-6xl font-bold font-playfair mb-4 leading-tight drop-shadow-lg"
+        >
+          {content[language].description}
+        </motion.h1>
+
+        <motion.p
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.9, delay: 0.3 }}
+          className="text-sm sm:text-base md:text-xl text-gray-200 drop-shadow-md px-4"
+        >
+          {content[language].tag}
+        </motion.p>
       </div>
     </section>
   );
