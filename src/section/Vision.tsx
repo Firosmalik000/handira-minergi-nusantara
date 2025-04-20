@@ -8,11 +8,11 @@ const Vision = () => {
 
   const content = {
     en: {
-      title: 'Our Vision',
+      title: 'OUR VISION',
       description: 'To be the leading Indonesian energy company, driving innovation and sustainability in the oil and gas sector while contributing to the nation’s energy independence and economic advancement.',
     },
     id: {
-      title: 'Visi Kami',
+      title: 'VISI KAMI',
       description: 'Menjadi perusahaan energi terkemuka di Indonesia, yang mendorong inovasi dan keberlanjutan di sektor minyak dan gas, sekaligus berkontribusi terhadap kemandirian energi dan kemajuan ekonomi bangsa.',
     },
   };
