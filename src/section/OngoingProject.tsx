@@ -9,7 +9,7 @@ const OngoingProject = () => {
 
   const projectDetails = {
     en: {
-      title: 'Ongoing Project',
+      title: 'ONGOING PROJECT',
       projectName: 'LNG Terminal and Distribution for Central and Yogyakarta',
       partner: 'Joint Venture with OPSICO',
       intro: 'In collaboration with OPSICO, PT. HADIRA MINERGI NUSANTARA is developing a state-of-the-art LNG terminal and distribution network for Central Java and Yogyakarta.',
@@ -37,7 +37,7 @@ const OngoingProject = () => {
       ],
     },
     id: {
-      title: 'Proyek Berlangsung',
+      title: 'PROYEK BERLANGSUNG',
       projectName: 'Terminal LNG dan Distribusi untuk Jawa Tengah dan Yogyakarta',
       partner: 'Joint Venture dengan OPSICO',
       intro: 'Bekerja sama dengan OPSICO, PT. HADIRA MINERGI NUSANTARA sedang mengembangkan terminal LNG modern dan jaringan distribusi untuk Jawa Tengah dan Yogyakarta.',
@@ -71,7 +71,7 @@ const OngoingProject = () => {
   return (
     <section className="w-full py-20 px-6 md:px-24 bg-[#467cfa]  text-white" id="project">
       <div className="text-center mb-16">
-        <motion.h2 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} className="text-4xl md:text-5xl font-bold font-playfair mb-6">
+        <motion.h2 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} className="text-2xl md:text-4xl font-bold font-playfair mb-6">
           {data.title}
         </motion.h2>
         <motion.p initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} className="text-xl max-w-3xl mx-auto text-white">
@@ -93,10 +93,10 @@ const OngoingProject = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: index * 0.2, duration: 0.6 }}
-            className="bg-white bg-opacity-5 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:scale-105 transition-all"
+            className="bg-white bg-opacity-5 backdrop-blur-md px-2 py-6 rounded-2xl shadow-lg hover:scale-105 transition-all"
           >
             <div className="flex justify-center">{item.icon}</div>
-            <h3 className="text-xl font-semibold mt-4 mb-2 text-orange-300 font-playfair text-center">{item.title}</h3>
+            <h3 className="text-xl font-semibold  mb-2 text-orange-300 font-playfair text-center">{item.title}</h3>
             <p className="text-gray-600 text-center">{item.description}</p>
           </motion.div>
         ))}
