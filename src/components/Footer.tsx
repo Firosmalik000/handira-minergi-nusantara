@@ -25,7 +25,7 @@ const Footer = () => {
 
   return (
     <div className="w-full flex justify-center items-center bg-white py-4">
-      <div className="w-[90%] bg-gradient-to-r from-[#2896ba] to-[#14516b] text-white px-8 md:px-[100px] py-12 rounded-2xl hover:scale-105 transition-all duration-300  shadow-lg shadow-gray-400">
+      <div className="w-[90%] bg-gradient-to-r from-[#2896ba] to-[#14516b] text-white px-8 md:px-[100px] py-12 rounded-2xl   shadow-lg shadow-gray-400">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Company Info */}
           <div className="flex flex-col items-center md:items-start gap-y-2">
