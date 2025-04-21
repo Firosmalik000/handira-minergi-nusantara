@@ -19,11 +19,7 @@ const Hero = () => {
   };
 
   return (
-    <section
-      id="hero"
-      className="relative w-full min-h-screen bg-center bg-cover flex items-center justify-center px-4 sm:px-8"
-      style={{ backgroundImage: `url(/heri.jpeg)` }}
-    >
+    <section id="hero" className="relative w-full min-h-screen bg-center bg-cover flex items-center justify-center px-4 sm:px-8" style={{ backgroundImage: `url(/heri.jpeg)` }}>
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/20 z-10" />
 
@@ -39,21 +35,11 @@ const Hero = () => {
           {content[language].title}
         </motion.h2> */}
 
-        <motion.h1
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: -30 }}
-          transition={{ duration: 0.8 }}
-          className="text-2xl sm:text-4xl md:text-6xl font-bold font-playfair mb-4 leading-tight drop-shadow-lg"
-        >
+        <motion.h1 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} transition={{ duration: 0.8 }} className="text-2xl sm:text-4xl md:text-6xl font-bold font-playfair mb-4 leading-tight drop-shadow-lg">
           {content[language].description}
         </motion.h1>
 
-        <motion.p
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: 20 }}
-          transition={{ duration: 0.9, delay: 0.3 }}
-          className="text-sm sm:text-base md:text-xl text-gray-200 drop-shadow-md px-4"
-        >
+        <motion.p whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 20 }} transition={{ duration: 0.9, delay: 0.3 }} className="text-sm sm:text-base md:text-xl text-gray-200 drop-shadow-md px-4">
           {content[language].tag}
         </motion.p>
       </div>

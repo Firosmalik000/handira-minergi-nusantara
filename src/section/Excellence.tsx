@@ -57,15 +57,9 @@ const Excellence = () => {
   const content = excellenceContent[language];
 
   return (
-    <section id="excellence" className="w-full py-20 px-6 md:px-24 bg-orange-400 ">
+    <section id="excellence" className="w-full py-20 px-6 md:px-24 bg-[#46a1bf] ">
       <div className="text-center mb-8">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ delay: 0.2, duration: 0.6 }}
-          className="text-4xl font-bold text-white font-playfair mb-4"
-        >
+        <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ delay: 0.2, duration: 0.6 }} className="text-4xl font-bold text-white font-playfair mb-4">
           {content.title}
         </motion.h2>
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ delay: 0.5, duration: 0.6 }} className="text-base md:text-lg text-white max-w-3xl mx-auto">

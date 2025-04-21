@@ -36,19 +36,11 @@ const Mision = () => {
     <section id="mision" className="w-full bg-gray-100 py-16 px-4 md:px-12">
       <div className="flex flex-col md:flex-row items-center gap-8 max-w-screen-xl mx-auto">
         <div className="w-full md:w-1/2">
-          <Image
-            src="/hand.jpg"
-            width={700}
-            height={800}
-            alt="Client"
-            className="w-full md:h-[800px] h-[400px] object-cover rounded-2xl shadow-xl"
-          />
+          <Image src="/hand.jpg" width={700} height={800} alt="Client" className="w-full md:h-[800px] h-[400px] object-cover rounded-2xl shadow-xl" />
         </div>
 
         <div className="w-full md:w-1/2">
-          <h1 className="text-4xl font-bold font-playfair text-gray-800 text-center  mb-6">
-            {content[language].title}
-          </h1>
+          <h1 className="text-4xl font-bold font-playfair text-gray-800 text-center  mb-6">{content[language].title}</h1>
 
           <div className="grid grid-cols-1 gap-4 px-3 md:px-0">
             {content[language].descriptions.map((desc, index) => (
@@ -60,9 +52,7 @@ const Mision = () => {
                 transition={{ delay: index * 0.2, duration: 0.6, ease: 'easeOut' }}
                 className="relative bg-white rounded-2xl shadow-lg p-4 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300"
               >
-                <div className="absolute -top-4 -left-4 bg-blue-500 text-white font-bold text-lg w-10 h-10 flex items-center justify-center rounded-full shadow-md">
-                  {String(index + 1).padStart(2, '0')}
-                </div>
+                <div className="absolute -top-4 -left-4 bg-[#1F809F] text-white font-bold text-lg w-10 h-10 flex items-center justify-center rounded-full shadow-md">{String(index + 1).padStart(2, '0')}</div>
                 <p className="mt-4 text-gray-700 leading-relaxed">{desc}</p>
               </motion.div>
             ))}
