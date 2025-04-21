@@ -2,8 +2,8 @@ import React from 'react';
 
 const Map = () => {
   return (
-    <div className="w-full flex justify-center items-center bg-white py-4  hover:scale-105 transition-all duration-300">
-      <div className="w-[90%] h-[300px]  rounded-xl overflow-hidden shadow-lg shadow-gray-400">
+    <div className="w-full flex justify-center items-center bg-white py-4 ">
+      <div className="w-[90%] h-[300px]  rounded-xl overflow-hidden shadow-lg shadow-gray-400 hover:scale-105 transition-all duration-300">
         <iframe
           title="Location Map"
           width="100%"

@@ -52,7 +52,7 @@ const Mision = () => {
                 transition={{ delay: index * 0.2, duration: 0.6, ease: 'easeOut' }}
                 className="relative bg-white rounded-2xl shadow-lg p-4 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300"
               >
-                <div className="absolute -top-4 -left-4 bg-[#1F809F] text-white font-bold text-lg w-10 h-10 flex items-center justify-center rounded-full shadow-md">{String(index + 1).padStart(2, '0')}</div>
+                <div className="absolute -top-4 -left-4 bg-[#27a3cc] text-white font-bold text-lg w-10 h-10 flex items-center justify-center rounded-full shadow-md">{String(index + 1).padStart(2, '0')}</div>
                 <p className="mt-4 text-gray-700 leading-relaxed">{desc}</p>
               </motion.div>
             ))}
