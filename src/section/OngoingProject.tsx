@@ -3,7 +3,7 @@
 import { FaIndustry, FaPlug, FaCity, FaNetworkWired } from 'react-icons/fa';
 import { motion } from "framer-motion";
 import { useLanguage } from "../hooks/UseLanguage";
-import { Carousel } from "@/components/carousel";
+import { Carousel } from "@/components/ui/carousel";
 
 const OngoingProject = () => {
 	const { language } = useLanguage();
@@ -78,7 +78,7 @@ const OngoingProject = () => {
 	const data = projectDetails[language];
 
 	return (
-		<section className="w-full py-20 px-6 md:px-24 bg-[#1F809F]  text-white" id="project">
+		<section className="w-full py-20 px-6 md:px-24 bg-[#1F809F] overflow-hidden  text-white" id="project">
 			<div className="text-center mb-16">
 				<motion.h2 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} className="text-2xl md:text-4xl font-bold font-playfair mb-6">
 					{data.title}
