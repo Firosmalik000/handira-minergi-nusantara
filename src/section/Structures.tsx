@@ -9,7 +9,7 @@ const defaultAvatarUrl = 'https://ui-avatars.com/api/?background=random&size=256
 
 const leaders = [
   {
-    name: 'Dr. Prasetyo Aribowo, SH., M.Soc.Sc',
+    name: 'Dr. Prasetyo Aribowo, SH.M.Soc.Sc',
     position: 'Commissioner',
     img: '/PRASETYO.PNG',
   },
@@ -27,6 +27,11 @@ const leaders = [
     name: 'Janice Listijo, S.Ked',
     position: 'Director',
     img: '/JANICE.JPG',
+  },
+  {
+    name: 'Bayu Maryono, S.T',
+    position: 'Technical Director',
+    img: '/bayu_maryono.png',
   },
 ];
 
@@ -48,7 +53,7 @@ const Structures = () => {
         </motion.p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12">
         {leaders.map((leader, index) => {
           const avatarUrl = leader.img || `${defaultAvatarUrl}${encodeURIComponent(leader.name)}`;
 
@@ -77,4 +82,3 @@ const Structures = () => {
 };
 
 export default Structures;
-
