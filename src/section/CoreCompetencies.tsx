@@ -3,7 +3,7 @@
 import { FaOilCan, FaIndustry, FaBurn, FaGasPump } from 'react-icons/fa';
 import { motion } from "framer-motion";
 import { useLanguage } from "../hooks/UseLanguage";
-import { Carousel } from "@/components/ui/carousel";
+import { Carousel } from "@/components/carousel";
 
 const CoreCompetencies = () => {
 	const { language } = useLanguage();
