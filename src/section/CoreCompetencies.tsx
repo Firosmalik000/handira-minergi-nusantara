@@ -3,7 +3,7 @@
 import { FaOilCan, FaIndustry, FaBurn, FaGasPump } from 'react-icons/fa';
 import { motion } from "framer-motion";
 import { useLanguage } from "../hooks/UseLanguage";
-import { Carousel } from "@/components/carousel";
+import { Carousel } from "@/components/ui/carousel";
 
 const CoreCompetencies = () => {
 	const { language } = useLanguage();
@@ -74,7 +74,7 @@ const CoreCompetencies = () => {
 	const data = content[language];
 
 	return (
-		<section id="competencies" className="w-full py-20 px-6 md:px-24 bg-[#173C69] text-white">
+		<section id="competencies" className="w-full py-20 px-6 md:px-24 bg-[#173C69] text-white overflow-hidden">
 			<div className="text-center mb-10">
 				<motion.h2 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} className="text-4xl font-bold font-playfair mb-6">
 					{data.title}
