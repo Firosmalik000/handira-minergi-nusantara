@@ -10,7 +10,7 @@ const defaultAvatarUrl = 'https://ui-avatars.com/api/?background=random&size=256
 const leaders = [
   {
     name: 'Dr. Prasetyo Aribowo, SH.M.Soc.Sc',
-    position: 'Commissioner',
+    position: 'President Commissioner',
     img: '/PRASETYO.PNG',
   },
   {
