@@ -83,7 +83,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
           <div className="text-8xl md:text-9xl lg:text-10xl text-orange-500 group-hover:text-white">{icon}</div>
 
           <div>
-            <h2 className="text-start text-xl md:text-4xl lg:text-4xl font-bold font-playfair text-orange-500 group-hover:text-white">{title}</h2>
+            <h2 className="text-start text-xl md:text-4xl lg:text-4xl font-bold  text-orange-500 group-hover:text-white">{title}</h2>
             <p className="text-start text-sm md:text-base lg:text-lg text-gray-600 group-hover:text-white">{description}</p>
           </div>
         </div>

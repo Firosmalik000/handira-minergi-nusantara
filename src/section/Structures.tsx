@@ -43,7 +43,7 @@ const Structures = () => {
   return (
     <section id="structure" className="w-full bg-white py-20 px-4 md:px-24">
       <div className="text-center mb-16">
-        <motion.h2 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} className="text-4xl font-bold font-playfair text-gray-800 mb-4">
+        <motion.h2 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} className="text-4xl font-bold  text-gray-800 mb-4">
           {title}
         </motion.h2>
         <motion.p whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} className="text-gray-600 text-lg max-w-2xl mx-auto">

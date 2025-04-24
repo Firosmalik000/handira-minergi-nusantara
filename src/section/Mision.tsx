@@ -36,11 +36,11 @@ const Mision = () => {
     <section id="mision" className="w-full bg-gray-100 py-16 px-4 md:px-12">
       <div className="flex flex-col md:flex-row items-center gap-8 max-w-screen-xl mx-auto">
         <div className="w-full md:w-1/2">
-          <Image src="/hand.jpg" width={700} height={800} alt="Client" className="w-full md:h-[800px] h-[400px] object-cover rounded-2xl shadow-xl" />
+          <Image src="/13.JPG" width={700} height={800} alt="Client" className="w-full md:h-[800px] h-[400px] object-cover rounded-2xl shadow-xl" />
         </div>
 
         <div className="w-full md:w-1/2">
-          <h1 className="text-4xl font-bold font-playfair text-gray-800 text-center  mb-6">{content[language].title}</h1>
+          <h1 className="text-4xl font-bold  text-gray-800 text-center  mb-6">{content[language].title}</h1>
 
           <div className="grid grid-cols-1 gap-4 px-3 md:px-0">
             {content[language].descriptions.map((desc, index) => (

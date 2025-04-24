@@ -30,19 +30,19 @@ const Footer = () => {
           {/* Company Info */}
           <div className="flex flex-col items-center md:items-start gap-y-2">
             {/* <Image src="/logo.png" width={120} height={60} alt="Logo" className="object-contain" /> */}
-            <h2 className="text-3xl font-bold font-playfair mt-4 text-center md:text-left">PT Handira Minergi Nusantara</h2>
+            <h2 className="text-3xl font-bold  mt-4 text-center md:text-left">PT Handira Minergi Nusantara</h2>
             <p>Your trusted partner in energy solutions.</p>
           </div>
 
           {/* Address */}
           <div className="text-center md:text-left">
-            <h2 className="text-xl font-semibold font-playfair mb-4">{content[language].address}</h2>
+            <h2 className="text-xl font-semibold  mb-4">{content[language].address}</h2>
             <p>Jl. Gajahmada 68B, Semarang, Central Java, Indonesia 50138</p>
           </div>
 
           {/* Contact & Social */}
           <div className="text-center md:text-left">
-            <h2 className="text-xl font-semibold font-playfair mb-4">{content[language].company}</h2>
+            <h2 className="text-xl font-semibold  mb-4">{content[language].company}</h2>
             <div className="flex justify-center md:justify-start items-start mb-3">
               <FaEnvelope className="mt-1 mr-2" />
               <p>headoffice@hadiraminergi.com</p>

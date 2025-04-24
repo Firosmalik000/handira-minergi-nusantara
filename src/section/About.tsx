@@ -20,23 +20,20 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center px-8 md:px-2 sm:px-8" style={{ backgroundImage: `url(/about.jpg)` }}>
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40 backdrop-blur-sm z-10" />
+    <section id="about" className="w-full min-h-screen flex flex-col md:flex-row bg-gray-950">
+      {/* Gambar background sebagai sisi kiri */}
+      <div className="relative w-full md:w-1/2 min-h-[300px] md:min-h-screen bg-cover bg-center" style={{ backgroundImage: `url(/about.JPG)` }}>
+        {/* Overlay gelap */}
+        {/* <div className="absolute inset-0 bg-black/50" /> */}
+      </div>
 
-      {/* Content */}
-      <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} transition={{ duration: 0.8 }} className="relative z-20 max-w-4xl w-full text-white md:text-left text-center">
-        <motion.h2 className="text-2xl md:text-4xl font-playfair font-bold mb-4" whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} transition={{ duration: 0.6 }}>
-          {content[language].title}
-        </motion.h2>
+      {/* Konten teks di sisi kanan */}
+      <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} transition={{ duration: 0.8 }} className="w-full md:w-1/2 flex flex-col justify-center px-8 py-16 md:py-0 text-white relative z-20">
+        <motion.h2 className="text-2xl md:text-4xl font-bold mb-4">{content[language].title}</motion.h2>
 
-        <motion.h3 className="text-xl md:text-2xl font-semibold mb-6" whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} transition={{ duration: 0.6, delay: 0.1 }}>
-          {content[language].tag}
-        </motion.h3>
+        <motion.h3 className="text-xl md:text-2xl font-semibold mb-6">{content[language].tag}</motion.h3>
 
-        <motion.p className="text-sm md:text-lg leading-relaxed indent-8 max-w-2xl text-justify" whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} transition={{ duration: 0.6, delay: 0.2 }}>
-          {content[language].description}
-        </motion.p>
+        <motion.p className="text-sm md:text-lg leading-relaxed indent-8 text-justify max-w-2xl">{content[language].description}</motion.p>
       </motion.div>
     </section>
   );

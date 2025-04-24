@@ -59,7 +59,7 @@ const Excellence = () => {
   return (
     <section id="excellence" className="w-full py-20 px-6 md:px-24 bg-[#46a1bf] ">
       <div className="text-center mb-8">
-        <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ delay: 0.2, duration: 0.6 }} className="text-4xl font-bold text-white font-playfair mb-4">
+        <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ delay: 0.2, duration: 0.6 }} className="text-4xl font-bold text-white  mb-4">
           {content.title}
         </motion.h2>
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ delay: 0.5, duration: 0.6 }} className="text-base md:text-lg text-white max-w-3xl mx-auto">
@@ -78,7 +78,7 @@ const Excellence = () => {
             className="bg-white rounded-2xl shadow-lg py-6 px-2 text-center hover:scale-105 transition duration-300"
           >
             <div className="flex justify-center">{item.icon}</div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2 font-playfair">{item.title}</h3>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2 ">{item.title}</h3>
             <p className="text-gray-600">{item.description}</p>
           </motion.div>
         ))}
