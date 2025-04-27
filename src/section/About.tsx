@@ -21,16 +21,16 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="w-full min-h-screen flex flex-col md:flex-row bg-gray-950 px-4 md:px-32 py-24 ">
+    <section id="about" className="w-full min-h-screen flex flex-col md:flex-row justify-center bg-gray-950 px-4 md:px-32 py-24 ">
       {/* Sisi kiri: Gambar background */}
-      <div className="relative w-full md:w-1/2 h-[400px] md:h-auto">
+      <div className="relative w-full md:w-1/3 h-[400px] md:h-auto">
         <Image src="/14.JPG" alt="Background Image" fill className="object-cover rounded-2xl" priority />
       </div>
 
       {/* Sisi kanan: Konten teks */}
       <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} transition={{ duration: 0.8 }} className="w-full md:w-1/2 flex flex-col justify-center px-8 py-16 md:py-0 text-white relative z-20">
-        <motion.h2 className="text-2xl md:text-4xl font-bold mb-4">{content[language].title}</motion.h2>
-        <motion.h3 className="text-xl md:text-2xl font-semibold mb-6">{content[language].tag}</motion.h3>
+        <motion.h2 className="text-2xl md:text-4xl text-center md:text-left font-bold mb-4">{content[language].title}</motion.h2>
+        <motion.h3 className="text-xl md:text-2xl font-semibold text-center md:text-left mb-6">{content[language].tag}</motion.h3>
         <motion.p className="text-sm md:text-lg leading-relaxed indent-8 text-justify max-w-2xl">{content[language].description}</motion.p>
       </motion.div>
     </section>
