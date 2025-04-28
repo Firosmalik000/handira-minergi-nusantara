@@ -58,9 +58,9 @@ const Navbar = () => {
           className={`fixed top-0 z-50 w-[90%] transition-all duration-500  mt-6 rounded-2xl
         ${isScrolled ? 'bg-white/60 text-black shadow-md backdrop-blur-md' : 'bg-transparent text-white'}`}
         >
-          <div className="container mx-auto flex items-center justify-between h-[60px] md:h-[70px] px-4 md:px-6 lg:px-8">
+          <div className="container mx-auto flex items-center justify-between h-[60px] md:h-[80px] px-4 md:px-6 lg:px-8">
             <div className="flex items-center gap-2">
-              <Image src="/logo.png" width={100} height={100} className="h-20  md:h-30 w-full" alt="Logo" />
+              <Image src="/logo.png" width={100} height={100} className=" w-full" alt="Logo" />
               {/* <p className="text-xl md:text-3xl font-bold font-sans">PT. Handira Minergi Nusantara</p> */}
             </div>
 
