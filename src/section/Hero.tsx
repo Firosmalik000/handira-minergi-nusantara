@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <section id="hero" className="relative w-full min-h-screen bg-center bg-cover flex items-center justify-center px-4 sm:px-8" style={{ backgroundImage: `url(/hero2.jpg)` }}>
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/20 z-10" />
+      <div className="absolute inset-0 bg-black/40 z-10" />
 
       {/* Content */}
       <div className="relative z-20 text-white text-center max-w-screen-xl w-full">
