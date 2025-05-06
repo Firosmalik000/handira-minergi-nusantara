@@ -19,7 +19,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative w-full min-h-screen bg-center bg-cover flex items-center justify-center px-4 sm:px-8" style={{ backgroundImage: `url(/hero.jpg)` }}>
+    <section id="hero" className="relative w-full min-h-screen bg-center bg-cover flex items-center justify-center px-4 sm:px-8" style={{ backgroundImage: `url(/hero2.jpg)` }}>
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/20 z-10" />
 
