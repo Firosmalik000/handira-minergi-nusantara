@@ -13,25 +13,25 @@ const leaders = [
     position: 'President Commissioner',
     img: '/PRASETYO.PNG',
   },
-  {
-    name: 'Elfira Purnamasari, S.Kom., M.M',
-    position: 'Commissioner',
-    img: '/ELFIRA.JPG',
-  },
+  // {
+  //   name: 'Elfira Purnamasari, S.Kom., M.M',
+  //   position: 'Commissioner',
+  //   img: '/ELFIRA.JPG',
+  // },
   {
     name: 'Dr. Harto Listijo, S.E., M.Kom',
     position: 'President Director',
     img: '/HARTO.JPG',
   },
-  {
-    name: 'Janice Listijo, S.Ked',
-    position: 'Director',
-    img: '/JANICE.JPG',
-  },
+  // {
+  //   name: 'Janice Listijo, S.Ked',
+  //   position: 'Director',
+  //   img: '/JANICE.JPG',
+  // },
   {
     name: 'Bayu Maryono, S.T',
     position: 'Technical Director',
-    img: '/bayu_maryono.png',
+    img: '/hadura2.jpg',
   },
 ];
 
@@ -52,30 +52,31 @@ const Structures = () => {
             : 'Meet our leadership team, bringing expertise and dedication to the development of our company.'}
         </motion.p>
       </div>
+      <div className="flex justify-center w-full border">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 ">
+          {leaders.map((leader, index) => {
+            const avatarUrl = leader.img || `${defaultAvatarUrl}${encodeURIComponent(leader.name)}`;
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12">
-        {leaders.map((leader, index) => {
-          const avatarUrl = leader.img || `${defaultAvatarUrl}${encodeURIComponent(leader.name)}`;
-
-          return (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
-              transition={{ delay: index * 0.2, duration: 0.6, ease: 'easeOut' }}
-              className="flex flex-col items-center text-center"
-            >
-              <div className="w-40 h-40 rounded-full overflow-hidden mb-4 shadow-lg">
-                {/* Pakai tag <img> biasa karena src dari URL eksternal */}
-                {leader.img ? <Image src={leader.img} alt={leader.name} width={256} height={256} /> : null}
-                <img src={avatarUrl} alt={leader.name} className="object-cover w-full h-full" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800">{leader.name}</h3>
-              <p className="text-sm text-gray-500">{leader.position}</p>
-            </motion.div>
-          );
-        })}
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false, amount: 0.2 }}
+                transition={{ delay: index * 0.2, duration: 0.6, ease: 'easeOut' }}
+                className="flex flex-col items-center text-center"
+              >
+                <div className="w-40 h-40 rounded-full overflow-hidden mb-4 shadow-lg">
+                  {/* Pakai tag <img> biasa karena src dari URL eksternal */}
+                  {leader.img ? <Image src={leader.img} alt={leader.name} width={256} height={256} /> : null}
+                  <img src={avatarUrl} alt={leader.name} className="object-cover w-full h-full" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800">{leader.name}</h3>
+                <p className="text-sm text-gray-500">{leader.position}</p>
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

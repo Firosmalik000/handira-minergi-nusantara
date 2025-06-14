@@ -8,3 +8,5 @@ export { default as OngoingProject } from './OngoingProject';
 export { default as Structures } from './Structures';
 export { default as Excellence } from './Excellence';
 export { default as Company } from './Company';
+export { default as Galery } from './Galery';
+export { default as Partner } from './Partner';

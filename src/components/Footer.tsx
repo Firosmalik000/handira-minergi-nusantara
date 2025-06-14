@@ -36,7 +36,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Company Info */}
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }} viewport={{ once: false }} className="flex flex-col items-center md:items-start gap-y-2">
-            <h2 className="text-3xl font-bold mt-4 text-center md:text-left">PT Handira Minergi Nusantara</h2>
+            <h2 className="text-3xl font-bold mt-4 text-center md:text-left">PT Hadira Energi Indonesia</h2>
             <p>Your trusted partner in energy solutions.</p>
           </motion.div>
 
