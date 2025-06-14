@@ -13,7 +13,7 @@ const OngoingProject = () => {
       title: 'ONGOING PROJECT',
       projectName: 'LNG Terminal and Distribution for Central and Yogyakarta',
       partner: 'Joint Venture with OPSICO',
-      intro: 'In collaboration with OPSICO, PT. HADIRA MINERGI NUSANTARA is developing a state-of-the-art LNG terminal and distribution network for Central Java and Yogyakarta.',
+      intro: 'In collaboration with OPSICO, PT. HADIRA ENERGI INDONESIA is developing a state-of-the-art LNG terminal and distribution network for Central Java and Yogyakarta.',
       highlights: [
         {
           title: 'Modern Storage & Regasification',
@@ -45,7 +45,7 @@ const OngoingProject = () => {
       title: 'PROYEK BERLANGSUNG',
       projectName: 'Terminal LNG dan Distribusi untuk Jawa Tengah dan Yogyakarta',
       partner: 'Joint Venture dengan OPSICO',
-      intro: 'Bekerja sama dengan OPSICO, PT. HADIRA MINERGI NUSANTARA sedang mengembangkan terminal LNG modern dan jaringan distribusi untuk Jawa Tengah dan Yogyakarta.',
+      intro: 'Bekerja sama dengan OPSICO, PT. HADIRA ENERGI INDONESIA sedang mengembangkan terminal LNG modern dan jaringan distribusi untuk Jawa Tengah dan Yogyakarta.',
       highlights: [
         {
           title: 'Fasilitas Penyimpanan & Regasifikasi Modern',

@@ -11,12 +11,12 @@ const About = () => {
     en: {
       title: 'ABOUT US',
       tag: 'Where Innovation Meets Energy Excellence',
-      description: `PT. HADIRA MINERGI NUSANTARA is a distinguished energy company founded by seasoned professionals with decades of expertise in the oil, gas, and mining sectors. Guided by the combined scope of KBLI 43223, KBLI 0620, KBLI 0610, KBLI 06201, KBLI 0990, and KBLI 073, the company is actively engaged in the exploration, extraction, processing, and distribution of both crude oil and natural gas resources. With operations rooted in innovation and sustainability, PT. HADIRA MINERGI NUSANTARA aspires to play a pivotal role in meeting Indonesia's growing energy demands while driving economic growth.`,
+      description: `PT. HADIRA ENERGI INDONESIA is a distinguished energy company founded by seasoned professionals with decades of expertise in the oil, gas, and mining sectors. Guided by the combined scope of KBLI 43223, KBLI 0620, KBLI 0610, KBLI 06201, KBLI 0990, and KBLI 073, the company is actively engaged in the exploration, extraction, processing, and distribution of both crude oil and natural gas resources. With operations rooted in innovation and sustainability, PT. HADIRA ENERGI INDONESIA aspires to play a pivotal role in meeting Indonesia's growing energy demands while driving economic growth.`,
     },
     id: {
       title: 'TENTANG KAMI',
       tag: 'Ketika Inovasi Bertemu Keunggulan Energi',
-      description: `PT. HADIRA MINERGI NUSANTARA merupakan perusahaan energi terkemuka yang didirikan oleh para profesional berpengalaman dengan pengalaman puluhan tahun di sektor minyak, gas, dan pertambangan. Dipandu oleh cakupan gabungan KBLI 43223, KBLI 0620, KBLI 0610, KBLI 06201, KBLI 0990, dan KBLI 073, perusahaan ini secara aktif terlibat dalam eksplorasi, ekstraksi, pemrosesan, dan distribusi sumber daya minyak mentah dan gas alam. Dengan operasi yang berakar pada inovasi dan keberlanjutan, PT. HADIRA MINERGI NUSANTARA bercita-cita untuk memainkan peran penting dalam memenuhi permintaan energi Indonesia yang terus meningkat sekaligus mendorong pertumbuhan ekonomi.`,
+      description: `PT. HADIRA ENERGI INDONESIA merupakan perusahaan energi terkemuka yang didirikan oleh para profesional berpengalaman dengan pengalaman puluhan tahun di sektor minyak, gas, dan pertambangan. Dipandu oleh cakupan gabungan KBLI 43223, KBLI 0620, KBLI 0610, KBLI 06201, KBLI 0990, dan KBLI 073, perusahaan ini secara aktif terlibat dalam eksplorasi, ekstraksi, pemrosesan, dan distribusi sumber daya minyak mentah dan gas alam. Dengan operasi yang berakar pada inovasi dan keberlanjutan, PT. HADIRA ENERGI INDONESIA bercita-cita untuk memainkan peran penting dalam memenuhi permintaan energi Indonesia yang terus meningkat sekaligus mendorong pertumbuhan ekonomi.`,
     },
   };
 

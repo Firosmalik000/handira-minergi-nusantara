@@ -8,12 +8,12 @@ const Hero = () => {
   const content = {
     en: {
       title: 'Welcome To',
-      description: `PT. HADIRA MINERGI NUSANTARA`,
+      description: `PT. HADIRA ENERGI INDONESIA`,
       tag: `Your trusted partner in energy solutions.`,
     },
     id: {
       title: 'Selamat Datang',
-      description: `PT. HADIRA MINERGI NUSANTARA`,
+      description: `PT. HADIRA ENERGI INDONESIA`,
       tag: `Mitra tepercaya Anda dalam solusi energi.`,
     },
   };

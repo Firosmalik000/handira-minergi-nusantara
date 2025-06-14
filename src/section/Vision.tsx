@@ -9,11 +9,17 @@ const Vision = () => {
   const content = {
     en: {
       title: 'OUR VISION',
-      description: 'To be the leading Indonesian energy company, driving innovation and sustainability in the oil and gas sector while contributing to the nation’s energy independence and economic advancement.',
+      description: `To be the leading Indonesian energy company and a trusted project development partner, 
+  driving innovation, sustainability, and strategic collaboration across the oil & gas, LNG, and 
+  offshore construction sectors, while contributing to national energy independence and 
+  economic advancement.`,
     },
     id: {
       title: 'VISI KAMI',
-      description: 'Menjadi perusahaan energi terkemuka di Indonesia, yang mendorong inovasi dan keberlanjutan di sektor minyak dan gas, sekaligus berkontribusi terhadap kemandirian energi dan kemajuan ekonomi bangsa.',
+      description: `Menjadi perusahaan energi terkemuka di Indonesia dan mitra terpercaya dalam pengembangan proyek, 
+  mendorong inovasi, keberlanjutan, dan kolaborasi strategis di sektor minyak & gas, LNG, dan 
+  konstruksi lepas pantai, sekaligus berkontribusi pada kemandirian energi nasional dan 
+  kemajuan ekonomi.`,
     },
   };
 

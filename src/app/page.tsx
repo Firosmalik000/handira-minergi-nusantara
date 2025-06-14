@@ -1,5 +1,5 @@
 import Footer from '@/components/Footer';
-import { About, Company, CoreCompetencies, Excellence, Galery, Hero, Mision, OngoingProject, Partner, Structures, Vision } from '@/section';
+import { About, Company, CoreCompetencies, Excellence, Galery, Hero, Mision, OngoingProject, Partner, Structures, Values, Vision } from '@/section';
 import Map from '@/section/Map';
 
 const Home = () => {
@@ -7,6 +7,7 @@ const Home = () => {
     <div>
       <Hero />
       <About />
+      <Values />
       <OngoingProject />
       <CoreCompetencies />
       <Vision />

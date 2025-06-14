@@ -10,3 +10,4 @@ export { default as Excellence } from './Excellence';
 export { default as Company } from './Company';
 export { default as Galery } from './Galery';
 export { default as Partner } from './Partner';
+export { default as Values } from './Values';

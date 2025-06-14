@@ -10,7 +10,7 @@ const Excellence = () => {
   const excellenceContent = {
     en: {
       title: 'COMMITMENT TO EXCELLENCE',
-      subtitle: 'PT. HADIRA MINERGI NUSANTARA upholds the highest standards in the following pillars:',
+      subtitle: 'PT. HADIRA ENERGI INDONESIA upholds the highest standards in the following pillars:',
       highlights: [
         {
           title: 'Operational Efficiency',
@@ -32,7 +32,7 @@ const Excellence = () => {
     },
     id: {
       title: 'KOMITMEN TERHADAP KEUNGGULAN',
-      subtitle: 'PT. HADIRA MINERGI NUSANTARA menjunjung standar tertinggi dalam pilar-pilar berikut:',
+      subtitle: 'PT. HADIRA ENERGI INDONESIA menjunjung standar tertinggi dalam pilar-pilar berikut:',
       highlights: [
         {
           title: 'Efisiensi Operasional',

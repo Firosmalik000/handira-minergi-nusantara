@@ -61,7 +61,6 @@ const Navbar = () => {
           <div className="container mx-auto flex items-center justify-between h-[60px] md:h-[80px] px-4 md:px-6 lg:px-8">
             <div className="flex items-center gap-2">
               <Image src="/logo.png" width={100} height={100} className=" w-full" alt="Logo" />
-              {/* <p className="text-xl md:text-3xl font-bold font-sans">PT. Handira Minergi Nusantara</p> */}
             </div>
 
             <div className="hidden lg:flex items-center gap-x-4">

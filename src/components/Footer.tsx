@@ -51,7 +51,7 @@ const Footer = () => {
             <h2 className="text-xl font-semibold mb-4">{content[language].company}</h2>
             <div className="flex justify-center md:justify-start items-start mb-3">
               <FaEnvelope className="mt-1 mr-2" />
-              <p>headoffice@hadiraminergi.com</p>
+              <p>headoffice@hadiraenergi.com</p>
             </div>
             <div className="flex justify-center md:justify-start items-start mb-3">
               <FaPhone className="mt-1 mr-2" />
@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
 
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.4 }} viewport={{ once: false }} className="mt-12 border-t pt-4 text-center text-sm text-gray-200">
-          &copy; {new Date().getFullYear()} PT Handira Minergi Nusantara. All rights reserved.
+          &copy; {new Date().getFullYear()} PT Handira Energi Indonesia. All rights reserved.
         </motion.div>
       </motion.div>
     </div>
