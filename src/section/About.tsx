@@ -8,32 +8,44 @@ const About = () => {
   const { language } = useLanguage();
 
   const content = {
-    en: {
-      title: 'ABOUT US',
-      tag: 'Where Innovation Meets Energy Excellence',
-      description: `PT. HADIRA ENERGI INDONESIA is a distinguished energy company founded by seasoned professionals with decades of expertise in the oil, gas, and mining sectors. Guided by the combined scope of KBLI 43223, KBLI 0620, KBLI 0610, KBLI 06201, KBLI 0990, and KBLI 073, the company is actively engaged in the exploration, extraction, processing, and distribution of both crude oil and natural gas resources. With operations rooted in innovation and sustainability, PT. HADIRA ENERGI INDONESIA aspires to play a pivotal role in meeting Indonesia's growing energy demands while driving economic growth.`,
-    },
-    id: {
-      title: 'TENTANG KAMI',
-      tag: 'Ketika Inovasi Bertemu Keunggulan Energi',
-      description: `PT. HADIRA ENERGI INDONESIA merupakan perusahaan energi terkemuka yang didirikan oleh para profesional berpengalaman dengan pengalaman puluhan tahun di sektor minyak, gas, dan pertambangan. Dipandu oleh cakupan gabungan KBLI 43223, KBLI 0620, KBLI 0610, KBLI 06201, KBLI 0990, dan KBLI 073, perusahaan ini secara aktif terlibat dalam eksplorasi, ekstraksi, pemrosesan, dan distribusi sumber daya minyak mentah dan gas alam. Dengan operasi yang berakar pada inovasi dan keberlanjutan, PT. HADIRA ENERGI INDONESIA bercita-cita untuk memainkan peran penting dalam memenuhi permintaan energi Indonesia yang terus meningkat sekaligus mendorong pertumbuhan ekonomi.`,
-    },
+		en: {
+			title: "ABOUT US",
+			tag: "Where Innovation Meets Energy Excellence",
+			description: `PT. HADIRA ENERGI INDONESIA is a premier Indonesian energy project development and management firm specializing in the oil, gas, LNG, and offshore construction sectors. Founded by a team of highly experienced industry professionals, the company excels at delivering integrated solutions that bridge international technology and investment with local execution excellence.
+
+Positioned as a strategic partner for both government entities and multinational energy corporations, PT. HADIRA ENERGI INDONESIA brings unparalleled expertise in navigating Indonesia’s regulatory landscape, managing complex stakeholder relationships, and ensuring the successful execution of large-scale energy infrastructure projects.`,
+		},
+		id: {
+			title: "TENTANG KAMI",
+			tag: "Di Mana Inovasi Bertemu Keunggulan Energi",
+			description: `PT. HADIRA ENERGI INDONESIA adalah perusahaan pengembangan dan manajemen proyek energi terkemuka di Indonesia yang berspesialisasi dalam sektor minyak, gas, LNG, dan konstruksi lepas pantai. Didirikan oleh tim profesional berpengalaman di industri ini, perusahaan unggul dalam memberikan solusi terpadu yang menjembatani teknologi serta investasi internasional dengan keunggulan eksekusi lokal.
+
+Sebagai mitra strategis bagi lembaga pemerintah maupun perusahaan energi multinasional, PT. HADIRA ENERGI INDONESIA menghadirkan keahlian luar biasa dalam menavigasi regulasi di Indonesia, mengelola hubungan pemangku kepentingan yang kompleks, serta memastikan keberhasilan pelaksanaan proyek infrastruktur energi skala besar.`,
+		},
   };
 
-  return (
-    <section id="about" className="w-full min-h-screen flex flex-col md:flex-row justify-center bg-gray-950 px-4 md:px-32 py-24 ">
-      {/* Sisi kiri: Gambar background */}
-      <div className="relative w-full md:w-1/3 h-[400px] md:h-auto">
-        <Image src="/14.JPG" alt="Background Image" fill className="object-cover rounded-2xl" priority />
-      </div>
+  const { title, tag, description } = content[language];
+  const descriptionParagraphs = description.split("\n\n");
 
-      {/* Sisi kanan: Konten teks */}
-      <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} transition={{ duration: 0.8 }} className="w-full md:w-1/2 flex flex-col justify-center px-8 py-16 md:py-0 text-white relative z-20">
-        <motion.h2 className="text-2xl md:text-4xl text-center md:text-left font-bold mb-4">{content[language].title}</motion.h2>
-        <motion.h3 className="text-xl md:text-2xl font-semibold text-center md:text-left mb-6">{content[language].tag}</motion.h3>
-        <motion.p className="text-sm md:text-lg leading-relaxed indent-8 text-justify max-w-2xl">{content[language].description}</motion.p>
-      </motion.div>
-    </section>
+  return (
+		<section id="about" className="w-full min-h-screen flex flex-col md:flex-row justify-center bg-gray-950 px-4 md:px-32 py-24">
+			{/* Sisi kiri: Gambar */}
+			<div className="relative w-full md:w-1/3 h-[400px] md:h-auto">
+				<Image src="/14.JPG" alt="Background Image" fill className="object-cover rounded-2xl" priority />
+			</div>
+
+			{/* Sisi kanan: Konten */}
+			<motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} transition={{ duration: 0.8 }} className="w-full md:w-1/2 flex flex-col justify-center px-8 py-16 md:py-0 text-white relative z-20">
+				<motion.h2 className="text-2xl md:text-4xl text-center md:text-left font-bold mb-4">{title}</motion.h2>
+				<motion.h3 className="text-xl md:text-2xl font-semibold text-center md:text-left mb-6">{tag}</motion.h3>
+
+				{descriptionParagraphs.map((para, index) => (
+					<motion.p key={index} className="text-sm md:text-lg leading-relaxed indent-8 text-justify mb-4" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.1 * index }}>
+						{para}
+					</motion.p>
+				))}
+			</motion.div>
+		</section>
   );
 };
 
