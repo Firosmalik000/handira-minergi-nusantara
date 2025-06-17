@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import React from 'react';
@@ -69,28 +68,7 @@ const Galery = () => {
     },
   };
 
-const imageGal = [
-  '/gall1.jpg',
-  '/gall2.jpg',
-  '/gall3.jpg',
-  '/gall4.jpg',
-  '/gall5.jpg',
-  '/gall6.jpg',
-  '/gall7.jpg',
-  '/gall8.jpg',
-  '/gall9.jpg',
-  '/gall10.jpg',
-  '/gall11.jpg',
-  '/gall12.jpg',
-  '/gall13.jpg',
-  '/gall14.jpg',
-  '/gall15.jpg',
-  '/gall16.jpg',
-  '/gall17.jpg',
-  '/gall18.jpg',
-  '/gall19.jpg',
-  '/gall20.jpg',
-];
+  const imageGal = Array.from({ length: 20 }, (_, i) => `/gall${i + 1}.jpg`);
 
   const { title, subtitle, items } = content[language];
 
@@ -116,20 +94,20 @@ const imageGal = [
       </div>
 
       {/* Section: Image Gallery */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-20">
         {imageGal.map((item, index) => (
           <motion.div
             key={index}
             className="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.15, duration: 0.6 }}
+            transition={{ delay: index * 0.05, duration: 0.6 }}
             viewport={{ once: true }}
           >
             <img
               src={item}
               alt={`Gallery ${index + 1}`}
-              className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300"
+              className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
             />
           </motion.div>
         ))}
@@ -143,7 +121,7 @@ const imageGal = [
             className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col overflow-hidden"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.15, duration: 0.6 }}
+            transition={{ delay: index * 0.1, duration: 0.6 }}
             viewport={{ once: true }}
           >
             <img
