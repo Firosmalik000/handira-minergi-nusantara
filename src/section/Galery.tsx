@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import React from 'react';
@@ -68,7 +69,7 @@ const Galery = () => {
     },
   };
 
-  const imageGal = Array.from({ length: 20 }, (_, i) => `/gall${i + 1}.jpg`);
+  const imageGal = Array.from({ length: 21 }, (_, i) => `/gall${i + 1}.jpg`);
 
   const { title, subtitle, items } = content[language];
 

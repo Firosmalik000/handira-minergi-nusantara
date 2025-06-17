@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { GrFormNext, GrFormPrevious } from 'react-icons/gr';
 
-const images = ['/3.JPG', '/11.JPG', '/12.JPG'];
+const images = ['/slide1.jpg', '/slide2.jpg', '/slide3.jpg'];
 
 const Company = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
