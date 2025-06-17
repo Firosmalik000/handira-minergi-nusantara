@@ -69,7 +69,29 @@ const Galery = () => {
     },
   };
 
-  const imageGal = ['/gall1.jpg', '/gall2.jpg', '/gall3.jpg', '/gall4.jpg', '/gall5.jpg'];
+const imageGal = [
+  '/gall1.jpg',
+  '/gall2.jpg',
+  '/gall3.jpg',
+  '/gall4.jpg',
+  '/gall5.jpg',
+  '/gall6.jpg',
+  '/gall7.jpg',
+  '/gall8.jpg',
+  '/gall9.jpg',
+  '/gall10.jpg',
+  '/gall11.jpg',
+  '/gall12.jpg',
+  '/gall13.jpg',
+  '/gall14.jpg',
+  '/gall15.jpg',
+  '/gall16.jpg',
+  '/gall17.jpg',
+  '/gall18.jpg',
+  '/gall19.jpg',
+  '/gall20.jpg',
+];
+
   const { title, subtitle, items } = content[language];
 
   return (
